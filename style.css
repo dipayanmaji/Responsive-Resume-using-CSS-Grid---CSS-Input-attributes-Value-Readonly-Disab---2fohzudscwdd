@@ -7,3 +7,130 @@
 }
 
 /* Write CSS code below */
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    /* grid-template-rows: 20% 80%; */
+    grid-template-columns: 300px 700px;
+}
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Left Section */
+.left-section{
+    background-color: #242531;
+}
+.left-content{
+    padding: 1rem;
+}
+
+/* 2.1. Profile Image */
+.profile-image{
+    display: block;
+    align-items: center;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+/* 2.2. Name */
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 0.02px;
+    padding: 0.8rem;
+    color: rgb(240, 240, 240);
+}
+/* 2.3. Designation */
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: #2b9db9de;
+    border-bottom: 2px rgb(194, 192, 192) solid;
+}
+/* 2.4. Description */
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(228, 228, 228);
+}
+/* 3.1. Social Media Icons */
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.personal-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+/* 3.1.b. email, mobile, location */
+.personal-details span{
+    padding-left: 0.5rem;
+    color: rgb(207, 207, 207);
+    font-size: 0.9rem;
+}
+/* 3.2. Skills Title */
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    color: rgb(228, 228, 228);
+    
+}
+/* 3.3. Skill Name */
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+/* 3.4. Progress Bar */
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+/* Right Section */
+.right-section{
+    background-color: #f7f7f7;
+}
+/*4.1. Right content padding */
+.right-main-content{
+    padding: 2rem 3rem 2rem 3rem;
+}
+/* 4.2. Right Title - ABOUT ME, Education, Experience */
+.rigth-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+/* About ME */
+.about p{
+    padding: 0.5rem;
+}
+/* EDUCATION */
+.degree{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.degree div{
+    padding: 0.5rem;
+}
+.sub-title{
+    text-transform: uppercase;
+}
