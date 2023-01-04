@@ -23,6 +23,7 @@
 /* Left Section */
 .left-section{
     background-color: #242531;
+    grid-column: span 1;
 }
 .left-content{
     padding: 1rem;
@@ -106,6 +107,7 @@
 /* Right Section */
 .right-section{
     background-color: #f7f7f7;
+    grid-column: span 1 / span 2;
 }
 /*4.1. Right content padding */
 .right-main-content{
